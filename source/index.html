@@ -17,49 +17,37 @@
     </header>
     <main>
       <section class="intro">
-        <div class="container">
-          <h1>Тестовая страница.</h1>
-          <p>На данной странице показан пример модальных окон.</p>
-          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
-          </p>
-          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        <div class="container intro__container">
+          <div class="intro__content">
+            <div class="intro__text">
+              <p>омск</p>
+              <h1>ФИТНЕС ЦЕНТР</h1>
+              <p>Тренажёрный зал
+                Групповые занятия
+                Кардио-зона</p>
+              <a href="#products" class="intro__button button"></a>
+            </div>
+            <div class="intro__image">
+              <picture>
+                <source type="image/webp" srcset="img/hero-bg.webp 1x, img/hero-bg2x.webp 2x">
+                <img src="img/hero-bg.jpg" alt="man looking forward" width="500" height="556"
+                  srcset="img/hero-bg2x.jpg 2x">
+              </picture>
+            </div>
+          </div>
+
+
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="container"></div>
-    </footer>
+
+  </div>
+  </section>
+  </main>
+  <footer>
+    <div class="container"></div>
+  </footer>
   </div>
 
-  <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
 
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
