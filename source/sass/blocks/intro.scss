@@ -2,7 +2,7 @@
   padding: 50px 0 52px;
   font-family: "Alumni Sans";
   color: $color-default-white;
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: $conic-gradient;
 }
 
 
@@ -31,6 +31,7 @@
     font-weight: 600;
     line-height: 110px;
     letter-spacing: 0.05em;
+    text-transform: uppercase;
   }
 
   h2 {
@@ -52,6 +53,7 @@
 }
 
 .intro__titles {
+  word-wrap: break-word;
   max-width: 265px;
 }
 
@@ -59,7 +61,3 @@
   padding: 17px 55px;
   min-height: 57px;
 }
-
-.button {}
-
-.intro__image {}

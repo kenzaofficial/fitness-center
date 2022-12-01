@@ -1,0 +1,40 @@
+.about {
+  padding: 120px 0;
+  background-color: $main-bg;
+}
+
+.about__container {
+  display: flex;
+  column-gap: 80px;
+}
+
+
+
+.about__text {
+  padding-left: 60px;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.about__titles {
+
+  h2 {
+    margin-bottom: 5px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.about__image {
+  flex-shrink: 0;
+}
