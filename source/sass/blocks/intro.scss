@@ -1,16 +1,64 @@
 .intro {
+  padding: 50px 0 52px;
+  font-family: "Alumni Sans";
+  color: $color-default-white;
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
 }
 
-.container {}
 
-.intro__container {}
 
-.intro__content {}
+.intro__container {
+  display: flex;
+  column-gap: 65px;
 
-.intro__text {}
+}
 
-.intro__button {}
+.intro__content {
+  margin-top: 70px;
+  margin-left: 10px;
+  text-align: right;
+
+}
+
+.intro__text {
+  display: flex;
+  align-items: center;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 92px;
+    font-weight: 600;
+    line-height: 110px;
+    letter-spacing: 0.05em;
+  }
+
+  h2 {
+    margin-right: 50px;
+    margin-bottom: 15px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: 0.03em;
+  }
+
+  p {
+    margin-top: 165px;
+    max-width: 120px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.intro__titles {
+  max-width: 265px;
+}
+
+.intro__btn {
+  padding: 17px 55px;
+  min-height: 57px;
+}
 
 .button {}
 
