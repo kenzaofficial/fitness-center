@@ -1,0 +1,27 @@
+.ui-kit {
+  padding: 50px;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  color: $color-default-white;
+}
+
+.ui-kit__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  max-width: 500px;
+}
+
+.form-field input {
+  padding: 0 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #74819C;
+}
+
+.form-field input:focus {
+  outline: none;
+}
