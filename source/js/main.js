@@ -1,12 +1,19 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { initModals } from './modules/modals/init-modals';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+  var text = document.getElementById('inputText');
 
-  // Utils
-  // ---------------------------------
+  /* сохраняем кнопку в переменную btn */
+  var colorItem = document.getElementById('colorItem');
+
+  /* вызываем функцию при нажатии на кнопку */
+  colorItem.onclick = function () {
+    text.select();
+    document.execCommand('copy');
+  };
 
   iosVhFix();
 
