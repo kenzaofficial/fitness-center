@@ -4,16 +4,16 @@ import { initModals } from './modules/modals/init-modals';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-  var text = document.getElementById('inputText');
+  // var text = document.getElementById('inputText');
 
-  /* сохраняем кнопку в переменную btn */
-  var colorItem = document.getElementById('colorItem');
+  // /* сохраняем кнопку в переменную btn */
+  // var colorItem = document.getElementById('colorItem');
 
-  /* вызываем функцию при нажатии на кнопку */
-  colorItem.onclick = function () {
-    text.select();
-    document.execCommand('copy');
-  };
+  // /* вызываем функцию при нажатии на кнопку */
+  // colorItem.onclick = function () {
+  //   text.select();
+  //   document.execCommand('copy');
+  // };
 
   iosVhFix();
 

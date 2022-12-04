@@ -8,7 +8,7 @@
   }
 
   @include vp-767 {
-    padding: 20px 0;
+    padding: 15px 0;
   }
 }
 
@@ -16,9 +16,11 @@
 .header__container {
   display: flex;
   align-items: center;
+  column-gap: 10px;
 }
 
 .header__logo {
+  flex-shrink: 0;
   align-self: flex-end;
 
   @include vp-1023 {
@@ -28,8 +30,8 @@
   }
 
   @include vp-767 {
-    width: 69px;
-    height: 24px;
+    width: 65px;
+    height: 14px;
   }
 }
 
