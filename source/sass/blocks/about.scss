@@ -20,8 +20,10 @@
   padding-top: 40px;
   padding-left: 60px;
 
+
   @include vp-1279 {
     padding: 0;
+    clear: both;
   }
 
   @include vp-1023 {
@@ -87,7 +89,17 @@
   order: 1;
   max-width: 660px;
   width: 100%;
+  padding: 0 0 401px 0;
 
+  @include vp-1279 {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  @include vp-1023 {
+    padding-bottom: 345px;
+    margin-bottom: 0;
+  }
 
   img {
     position: absolute;
@@ -99,17 +111,7 @@
     left: 0;
   }
 
-  @include vp-1279 {
-    margin-left: 40px;
-  }
 
-  @include vp-1023 {
-
-    margin-bottom: 0;
-    margin-left: 0;
-
-
-  }
 }
 
 .about__video {
@@ -120,14 +122,15 @@
   width: 100%;
   height: auto;
   transform: translateY(50%);
+  z-index: 1;
 
   @include vp-1279 {
-    left: -20px;
+    left: 50%;
+    transform: translate(-50%, 50%);
   }
 
   @include vp-1023 {
     max-width: 266px;
-
     left: 50%;
     transform: translate(-50%, 50%);
   }
@@ -139,6 +142,10 @@
   height: 0;
   overflow: hidden;
   max-width: 100%;
+
+  @include vp-1023 {
+    padding-bottom: 62.5%;
+  }
 }
 
 .embed-container iframe,

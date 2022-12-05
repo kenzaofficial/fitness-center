@@ -194,7 +194,6 @@
 .colors {
   display: flex;
   gap: 30px;
-
 }
 
 .colors__item {
@@ -202,32 +201,16 @@
   height: 200px;
   border-radius: 3px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
+  background-color: #ED0233;
 
+  &:hover {
+    transform: scale(1.1);
+  }
 
   cursor: pointer;
 
-  &--main-text {
-    background-color: $color-text-main;
-  }
-
-  &--main-bg {
-    background-color: $main-bg;
-  }
-}
-
-
-#inputText {
-  padding: 6px 7px;
-  font-size: 15px;
-}
-
-/* styling button */
-#copyText {
-  padding: 6px 11px;
-  font-size: 15px;
-  font-weight: bold;
-  background-color: #121212;
-  color: #efefef;
 }
