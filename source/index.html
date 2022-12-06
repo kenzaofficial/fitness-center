@@ -48,20 +48,13 @@
       </section>
       <section class="about">
         <div class="about__container container">
-
-
           <div class="about__image">
-            <div class="about__video">
-              <div class='embed-container'><iframe src='https://www.youtube.com/embed/9TZXsZItgdw' frameborder='0'
-                  allowfullscreen></iframe></div>
-            </div>
             <picture>
               <source type="image/webp" srcset="img/about-gym.webp 1x, img/about-gym2x.webp 2x">
               <img src="img/about-gym.jpg" alt="a lot of fitness equipment in the gym" width="660" height="401"
                 srcset="img/about-gym2x.jpg 2x">
             </picture>
           </div>
-
           <div class="about__text">
             <div class="about__titles">
               <h2>Тренажерный зал</h2>
@@ -79,18 +72,77 @@
               </p>
             </div>
           </div>
+          <div class="about__video">
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/9TZXsZItgdw' frameborder='0'
+                allowfullscreen></iframe></div>
+          </div>
         </div>
       </section>
       <section class="products">
         <div class="products__container container">
-          <h2>абонементы</h2>
+          <h2>Абонементы</h2>
           <div class="products__tabs tabs">
-            <button type="button" class="tabs__btn tabs__btn--active"></button>
-            <button type="button" class="tabs__btn"></button>
-            <button type="button" class="tabs__btn"></button>
+            <button type="button" class="tabs__btn tabs__btn--is-active" data-btn="1">1 месяц</button>
+            <button type="button" class="tabs__btn" data-btn="2"> 6 месяцев</button>
+            <button type="button" class="tabs__btn" data-btn="3"> 12 месяцев</button>
           </div>
-          <div class="products__list"></div>
+          <ul class="products__list">
+            <li class="products__item">
+              <div class="product-card">
+                <h3>C тренером</h3>
+                <p>12 занятий</p>
+                <div class="product-card__price">
+                  <p>1700<span> $</span></p>
+                </div>
+                <a href="#" class="product-card__btn btn ">купить абонемент</a>
+              </div>
+            </li>
+            <li class="products__item">
+              <div class="product-card">
+                <h3>Дневной</h3>
+                <p>с 8:00 до 17:00</p>
+                <div class="product-card__price">
+                  <p>1700<span> $</span></p>
+                </div>
+                <a href="#" class="product-card__btn btn ">купить абонемент</a>
+              </div>
+            </li>
+            <li class="products__item">
+              <div class="product-card">
+                <h3>Полный день</h3>
+                <p>с 8:00 до 22:00</p>
+                <div class="product-card__price">
+                  <p>1700<span> $</span></p>
+
+                </div>
+                <a href="#" class="product-card__btn btn ">купить абонемент</a>
+              </div>
+            </li>
+            <div class="contents">
+              <div class="content active" data-content="1">
+                <img class="content__img" src="/img/img_1.jpg" alt="">
+              </div>
+              <div class="content" data-content="2">
+                <img class="content__img" src="/img/img_2.jpg" alt="">
+              </div>
+              <div class="content" data-content="3">
+                <div class="tabs-secondary" id="tabsSecondary">
+                  <div class="tab-btn active" data-btn-inner="1">BMW</div>
+                  <div class="tab-btn" data-btn-inner="2">Mercedes</div>
+                </div>
+                <div class="contents">
+                  <div class="content-secondary active" data-content-inner="1" id="contentSecondary">
+                    <img class="content__img" src="/img/bmw.jpg" alt="">
+                  </div>
+                  <div class="content-secondary" data-content-inner="2" id="contentSecondary">
+                    <img class="content__img" src="/img/mercedes.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
         </div>
+
 
       </section>
     </main>

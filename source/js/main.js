@@ -1,58 +1,51 @@
 import { iosVhFix } from './utils/ios-vh-fix';
 import { initModals } from './modules/modals/init-modals';
-
+import { colorsInit } from './utils/colorsInit';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-  const colors = [
-    {
-      colorName: '$color-night-rider',
-      colorHex: '#333333',
-    },
-    {
-      colorName: '$color-golden-glow',
-      colorHex: '#f5d57f',
-    },
-    {
-      colorName: '$color-sapphire',
-      colorHex: '#102654',
-    },
-    {
-      colorName: '$color-deep-blush',
-      colorHex: '#F57391',
-    },
-    {
-      colorName: '$color-torch-red',
-      colorHex: '#ED0233',
-    },
-  ];
-
-  if ('content' in document.createElement('template')) {
-    const colorsIdElement = document.querySelector('.colors');
-    const templateColor = document.querySelector('#color');
-
-    for (let i = 0; i < colors.length; i++) {
-      // выведет 0, затем 1, затем 2
-
-      const templateColorClone = templateColor.content.cloneNode(true);
-      const colorItemText =
-        templateColorClone.querySelectorAll('.colors__item p');
-      const colorItem = templateColorClone.querySelector('.colors__item');
-      colorItem.style.backgroundColor = colors[i].colorHex;
-      colorItemText[0].textContent = colors[i].colorName;
-      colorItemText[1].textContent = colors[i].colorHex;
-      colorsIdElement.appendChild(templateColorClone);
+  const tabs = document.querySelector('.tabs');
+  const content = document.querySelectorAll('.content');
+  const changeClass = function (element) {
+    for (let i = 0; i < tabs.children.length; i++) {
+      tabs.children[i].classList.remove('tabs__btn--is-active');
     }
-  }
-
-  const copyToClipBoard = async (text) => navigator.clipboard.writeText(text);
-  const colorElements = document.querySelectorAll('.colors__item');
-  [...colorElements].forEach(async (item) => {
-    item.addEventListener('click', async () => {
-      await copyToClipBoard(item.querySelector('p').textContent);
-    });
+    element.classList.add('tabs__btn--is-active');
+  };
+  tabs.addEventListener('click', function (event) {
+    const currentTab = event.target.dataset.btn;
+    changeClass(event.target);
+    for (let i = 0; i < content.length; i++) {
+      content[i].classList.remove('tabs__btn--is-active');
+      if (content[i].dataset.content === currentTab) {
+        content[i].classList.add('tabs__btn--is-active');
+      }
+    }
   });
 
+  // мое дз
+
+  const tabsSecondary = document.querySelector('#tabsSecondary');
+  const contentSecondary = document.querySelectorAll('#contentSecondary');
+  const changeClassSecondary = function (element) {
+    for (let i = 0; i < tabsSecondary.children.length; i++) {
+      tabsSecondary.children[i].classList.remove('tabs__btn--is-active');
+    }
+    element.classList.add('tabs__btn--is-active');
+  };
+  console.log(tabsSecondary);
+
+  tabsSecondary.addEventListener('click', function (event) {
+    const currentTab = event.target.dataset.btnInner;
+    changeClassSecondary(event.target);
+    for (let i = 0; i < contentSecondary.length; i++) {
+      contentSecondary[i].classList.remove('tabs__btn--is-active');
+      if (contentSecondary[i].dataset.contentInner === currentTab) {
+        contentSecondary[i].classList.add('tabs__btn--is-active');
+      }
+    }
+  });
+  // colorsInit();
   iosVhFix();
 
   // Modules

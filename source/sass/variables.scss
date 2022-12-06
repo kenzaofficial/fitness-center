@@ -12,9 +12,9 @@ $color-transparent: rgba(255, 255, 255, 0);
 $color-night-rider: #333333;
 $color-golden-glow: #f5d57f;
 $color-sapphire: #102654;
-$color-egyptian-blue: #103AAE;
-$color-deep-blush: #F57391;
-$color-torch-red: #ED0233;
+$color-egyptian-blue: #103aae;
+$color-deep-blush: #f57391;
+$color-torch-red: #d10a42;
 
 $color-price-fill: $color-egyptian-blue;
 $color-text-main: $color-sapphire;
@@ -22,7 +22,8 @@ $secondary-bg: $color-deep-blush;
 $color-border-dark-fill: $color-sapphire;
 $main-bg: $color-night-rider;
 $promo-bg: $color-torch-red;
-
+$tab-active-fill: $color-torch-red;
+$price-shadow-fill: $color-night-rider;
 
 // Gradient
 $conic-gradient: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);

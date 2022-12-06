@@ -60,11 +60,15 @@
 .product-card {
   padding: 70px 77px;
   max-width: 360px;
+  background-color: $color-default-white;
   border: 7px solid transparent;
-  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
-  border-image-slice: 1;
   color: $color-text-main;
   text-align: center;
+
+  &:hover {
+    border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+    border-image-slice: 1;
+  }
 
   h3 {
     margin: 0;
@@ -91,7 +95,7 @@
       content: "1700";
       top: -55px;
       left: 0;
-      color: #E8E8E8;
+      color: rgba($price-shadow-fill, 0.5);
       font-size: 100px;
       font-weight: 700;
       line-height: 150px;
@@ -105,7 +109,7 @@
   }
 }
 
-.pruduct-card__btn {
+.product-card__btn {
   display: block;
   padding: 17px 30px;
   color: $color-text-main;

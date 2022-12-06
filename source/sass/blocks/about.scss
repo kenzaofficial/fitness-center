@@ -5,16 +5,27 @@
   @include vp-1023 {
     padding: 100px 0;
   }
+
+  @include vp-767 {
+    padding: 65px 0 70px;
+  }
 }
 
 .about__container {
-  @include vp-1023 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 415px 1fr;
+
+  @include vp-1279 {
     display: flex;
     flex-direction: column;
   }
 
+  @include vp-767 {
+    align-items: center;
+    padding: 0;
+  }
 }
-
 
 .about__text {
   padding-top: 40px;
@@ -23,14 +34,18 @@
 
   @include vp-1279 {
     padding: 0;
-    clear: both;
+    text-align: center;
   }
 
   @include vp-1023 {
     margin: 0 auto 45px;
     max-width: 515px;
-    text-align: center;
+  }
 
+  @include vp-767 {
+    padding: 0 15px;
+    text-align: left;
+    margin-bottom: 30px;
   }
 
   p {
@@ -40,7 +55,6 @@
 }
 
 .about__titles {
-
   h2 {
     margin-top: 0;
     margin-bottom: 5px;
@@ -52,6 +66,12 @@
       font-size: 42px;
       line-height: 50px;
     }
+
+    @include vp-767 {
+      margin-bottom: 5px;
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
 
   p {
@@ -62,6 +82,10 @@
 
     @include vp-1023 {
       margin-bottom: 30px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 25px;
     }
   }
 }
@@ -83,22 +107,25 @@
 
 .about__image {
   position: relative;
-  margin-bottom: 100px;
-  float: right;
-  margin-left: 80px;
-  order: 1;
+  margin-left: 85px;
+  padding: 0 0 401px 0;
   max-width: 660px;
   width: 100%;
-  padding: 0 0 401px 0;
+  order: 1;
 
   @include vp-1279 {
-    max-width: 100%;
     margin-left: 0;
+    max-width: 100%;
   }
 
   @include vp-1023 {
-    padding-bottom: 345px;
     margin-bottom: 0;
+    padding-bottom: 345px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 40px;
+    padding-bottom: 313px;
   }
 
   img {
@@ -111,17 +138,16 @@
     left: 0;
   }
 
-
 }
 
 .about__video {
   position: absolute;
   bottom: 0;
-  left: -63px;
+  left: 50%;
   max-width: 364px;
   width: 100%;
   height: auto;
-  transform: translateY(50%);
+  transform: translate(-145px, 50%);
   z-index: 1;
 
   @include vp-1279 {
@@ -131,20 +157,29 @@
 
   @include vp-1023 {
     max-width: 266px;
-    left: 50%;
-    transform: translate(-50%, 50%);
+  }
+
+  @include vp-767 {
+    position: static;
+    order: 2;
+    transform: none;
+    max-width: 100%;
   }
 }
 
 .embed-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 63%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
 
   @include vp-1023 {
     padding-bottom: 62.5%;
+  }
+
+  @include vp-767 {
+    padding-bottom: 52%;
   }
 }
 
