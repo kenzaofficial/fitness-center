@@ -34,7 +34,7 @@
   color: rgba($color-text-main, $alpha: 0.5);
   background-color: transparent;
 
-  &--is-active {
+  &.is-active {
     position: relative;
     color: rgba($color-text-main, $alpha: 1);
 
@@ -64,7 +64,6 @@
 
 .product-card {}
 
-.product-card__price {}
 
 .pruduct-card__btn {}
 
