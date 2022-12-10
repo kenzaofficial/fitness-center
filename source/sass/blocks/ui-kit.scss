@@ -58,14 +58,22 @@
 
 // --------------------product-card-start---------------------
 .product-card {
+  display: flex;
+  flex-direction: column;
   padding: 70px 77px;
   max-width: 360px;
   background-color: $color-default-white;
   border: 7px solid transparent;
   color: $color-text-main;
   text-align: center;
+  height: 100%;
 
   &:hover {
+    .product-card__btn {
+      color: $color-default-white;
+      background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    }
+
     border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
     border-image-slice: 1;
   }
@@ -114,10 +122,6 @@
   padding: 17px 30px;
   color: $color-text-main;
   border-color: $color-border-dark-fill;
-
-  &--active {
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  }
 }
 
 // --------------------product-card-end---------------------
