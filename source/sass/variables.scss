@@ -10,17 +10,26 @@ $color-transparent: rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 $color-night-rider: #333333;
-$color-neon-blue: #2c39f2;
-$color-torch-red: #ff1553;
 $color-golden-glow: #f5d57f;
+$color-sapphire: #102654;
+$color-egyptian-blue: #103aae;
+$color-deep-blush: #f57391;
+$color-torch-red: #d10a42;
 
-$secondary-bg: $color-golden-glow;
+$color-price-fill: $color-egyptian-blue;
+$color-text-main: $color-sapphire;
+$secondary-bg: $color-deep-blush;
+$color-border-dark-fill: $color-sapphire;
 $main-bg: $color-night-rider;
-
+$promo-bg: $color-torch-red;
+$tab-active-fill: $color-torch-red;
+$price-shadow-fill: $color-night-rider;
 
 // Gradient
 $conic-gradient: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
-$black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$play-button-gradient: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+
+
 
 // Typography
 // ---------------------------------

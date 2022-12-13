@@ -1,14 +1,14 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { initModals } from './modules/modals/init-modals';
+import { colorsInit } from './utils/colorsInit';
+import { initTabs } from './utils/init-tabs';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
-  // Utils
-  // ---------------------------------
-
+  // colorsInit();
   iosVhFix();
+  initTabs();
 
   // Modules
   // ---------------------------------

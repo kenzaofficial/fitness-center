@@ -25,9 +25,11 @@
         <div class="container intro__container">
           <div class="intro__content">
             <div class="intro__text">
-              <p>Тренажёрный зал
-                Групповые занятия
-                Кардио-зона</p>
+              <ul class="intro__list">
+                <li>Тренажёрный зал</li>
+                <li>Групповые занятия</li>
+                <li>Кардио-зона</li>
+              </ul>
               <div class="intro__titles">
                 <h2>омск</h2>
                 <h1>фитнес центр</h1>
@@ -46,40 +48,149 @@
       </section>
       <section class="about">
         <div class="about__container container">
-          <div class="about__text">
-            <div class="about__titles">
-              <h2>Тренажерный зал</h2>
-              <p>Просторный зал площадью 900 кв/м</p>
-            </div>
-            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
-              Тренажерный зал
-              оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-            <p>
-              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
-              несколько
-              оборудованных залов для различных видов групповых занятий.
-            </p>
-          </div>
-          <!-- <div class="about__image">
+          <div class="about__image">
             <picture>
               <source type="image/webp" srcset="img/about-gym.webp 1x, img/about-gym2x.webp 2x">
               <img src="img/about-gym.jpg" alt="a lot of fitness equipment in the gym" width="660" height="401"
                 srcset="img/about-gym2x.jpg 2x">
             </picture>
-          </div> -->
+          </div>
+          <div class="about__text">
+            <div class="about__titles">
+              <h2>Тренажерный зал</h2>
+              <p>Просторный зал площадью 900 кв/м</p>
+            </div>
+            <div class="about__description">
+              <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+                Тренажерный зал
+                оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <p>
+                В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре
+                есть
+                несколько
+                оборудованных залов для различных видов групповых занятий.
+              </p>
+            </div>
+          </div>
+          <div class="about__video">
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/9TZXsZItgdw' frameborder='0'
+                allowfullscreen></iframe></div>
+          </div>
         </div>
       </section>
       <section class="products">
-        <div class="products__container container">
-          <h2>абонементы</h2>
-          <div class="products__tabs tabs">
-            <button type="button" class="tabs__btn tabs__btn--active"></button>
-            <button type="button" class="tabs__btn"></button>
-            <button type="button" class="tabs__btn"></button>
+        <div class="products__container container" data-tabs="parent" data-height="max">
+          <h2>Абонементы</h2>
+          <div class="products__tabs tabs" data-tabs="controls">
+            <button type="button" class="tabs__btn" data-tabs="control">1 месяц</button>
+            <button type="button" class="tabs__btn" data-tabs="control">6 месяцев</button>
+            <button type="button" class="tabs__btn" data-tabs="control">12 месяцев</button>
           </div>
-          <div class="products__list"></div>
+          <div class="products__tabs-content" data-tabs="content">
+            <ul class="products__list" data-tabs="element">
+              <li class="products__item">
+                <div class="product-card">
+                  <h3>C тренером</h3>
+                  <p>12 занятий</p>
+                  <div class="product-card__price">
+                    <p>1<span> $</span></p>
+                  </div>
+                  <a href="#" class="product-card__btn btn ">купить абонемент</a>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product-card">
+                  <h3>Дневной</h3>
+                  <p>с 8:00 до 17:00</p>
+                  <div class="product-card__price">
+                    <p>12500<span> $</span></p>
+                  </div>
+                  <a href="#" class="product-card__btn btn ">купить абонемент</a>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product-card">
+                  <h3>Полный день</h3>
+                  <p>с 8:00 до 22:00</p>
+                  <div class="product-card__price">
+                    <p>9999999332224<span> $</span></p>
+                  </div>
+                  <a href="#" class="product-card__btn btn ">купить абонемент</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="products__list" data-tabs="element">
+              <li class="products__item">
+                <div class="product-card">
+                  <h3>C тренером</h3>
+                  <p>12 занятий</p>
+                  <div class="product-card__price">
+                    <p>100<span> $</span></p>
+                  </div>
+                  <a href="#" class="product-card__btn btn ">купить абонемент</a>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product-card">
+                  <h3>Дневной</h3>
+                  <p>с 8:00 до 17:00</p>
+                  <div class="product-card__price">
+                    <p>300<span> $</span></p>
+                  </div>
+                  <a href="#" class="product-card__btn btn ">купить абонемент</a>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product-card">
+                  <h3>Полный день</h3>
+                  <p>с 8:00 до 22:00</p>
+                  <div class="product-card__price">
+                    <p>500<span> $</span></p>
+                  </div>
+                  <a href="#" class="product-card__btn btn ">купить абонемент</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="products__list" data-tabs="element">
+              <li class="products__item">
+                <div class="product-card">
+                  <h3>C тренером</h3>
+                  <p>12 занятий</p>
+                  <div class="product-card__price">
+                    <p>3100<span> $</span></p>
+                  </div>
+                  <a href="#" class="product-card__btn btn ">купить абонемент</a>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="product-card">
+                  <h3>Дневной</h3>
+                  <p>с 8:00 до 17:00</p>
+                  <div class="product-card__price">
+                    <p>3500<span> $</span></p>
+                  </div>
+                  <a href="#" class="product-card__btn btn ">купить абонемент</a>
+              </li>
+              <li class="products__item">
+                <div class="product-card">
+                  <h3>Полный день</h3>
+                  <p>с 8:00 до 22:00</p>
+                  <div class="product-card__price">
+                    <p>3900<span> $</span></p>
+                  </div>
+                  <a href="#" class="product-card__btn btn ">купить абонемент</a>
+                </div>
+              </li>
+            </ul>
+            <div class="products__image">
+              <picture>
+                <source type="image/webp" srcset="img/plates.webp 1x, img/plates2x.webp 2x">
+                <img src="img/plates.png" alt="red plates for gym" width="470" height="494"
+                  srcset="img/plates2x.png 2x">
+              </picture>
+            </div>
+          </div>
         </div>
-
       </section>
     </main>
     <footer>
