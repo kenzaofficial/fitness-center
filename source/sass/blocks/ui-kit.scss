@@ -68,9 +68,13 @@
   text-align: center;
   height: 100%;
 
+  @include vp-1023 {
+    padding: 55px 110px 60px;
+  }
+
   @include vp-767 {
     max-width: 290px;
-    padding: 55px 40px;
+    padding: 45px 35px;
   }
 
   &:hover {
@@ -100,6 +104,10 @@
   p {
     margin-top: 10px;
     margin-bottom: 0;
+
+    @include vp-767 {
+      margin-top: 7px;
+    }
   }
 
 }
@@ -112,6 +120,14 @@
   font-size: 60px;
   line-height: 90px;
   z-index: 0;
+  word-wrap: break-word;
+
+  @include vp-767 {
+    margin-top: 47px;
+    margin-bottom: 30px;
+    font-size: 48px;
+    line-height: 72px;
+  }
 
   &::before {
     position: absolute;
@@ -125,13 +141,16 @@
     line-height: 150px;
     opacity: 0.5;
     z-index: -1;
+
+    @include vp-767 {
+      top: -37px;
+      font-size: 80px;
+      line-height: 120px;
+    }
   }
 
   p {
     margin: 0;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 90px;
     color: $color-price-fill;
     word-break: break-word;
 
@@ -166,10 +185,8 @@
   }
 
   &:hover {
-    .staff-card__front {
-      h3 {
-        opacity: 0;
-      }
+    .staff-card__front h3 {
+      opacity: 0;
     }
 
     .staff-card__back {
@@ -178,15 +195,13 @@
   }
 }
 
-.staff-card__front {
-  h3 {
-    position: absolute;
-    opacity: 1;
-    bottom: 0;
-    z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.staff-card__front h3 {
+  position: absolute;
+  opacity: 1;
+  bottom: 0;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .staff-card__back {
@@ -246,5 +261,4 @@
   }
 
   cursor: pointer;
-
 }
