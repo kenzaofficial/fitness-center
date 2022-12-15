@@ -1,7 +1,7 @@
 .products {
   padding: 120px 0;
   color: $color-text-main ;
-  background-color: black;
+  background-color: $secondary-bg;
 
   @include vp-1023 {
     padding: 100px 0;

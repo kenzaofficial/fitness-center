@@ -2,11 +2,11 @@
    padding: 120px 0 100px;
 
    @include vp-1023 {
-      padding: 105px 0 100px;
+      padding-top: 105px;
    }
 
    @include vp-767 {
-      padding: 77px 0 100px;
+      padding-top: 77px;
    }
 }
 
@@ -22,7 +22,7 @@
 .competitions__content {
    display: flex;
    flex-direction: column;
-   padding: 80px 78px 85px;
+   padding: 80px 78px 90px;
    flex: 1 1 auto;
    background-color: $promo-bg;
 
@@ -132,18 +132,15 @@
 
 .competitions__description {
    p {
-      margin: 0;
+      margin: 0 0 45px;
       font-size: 18px;
       line-height: 27px;
 
 
       @include vp-1023 {
+         margin-bottom: 30px;
          font-size: 12px;
          line-height: 18px;
-      }
-
-      @include vp-767 {
-         margin-bottom: 30px;
       }
    }
 }
@@ -164,5 +161,20 @@
 .btn {}
 
 .competitions__image {
+   position: relative;
    flex: 0 0 56.8%;
+
+   @include vp-767 {
+      display: block;
+      padding-bottom: 294px;
+   }
+
+   & img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+   }
 }

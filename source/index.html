@@ -8,6 +8,7 @@
   <meta name="description" content="Описание проекта">
   <title>Fitness center</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -215,7 +216,6 @@
               <p>Ежегодные соревнования по CrossFit</p>
             </div>
             <a href="#" class="competitions__btn btn">Заполнить заявку</a>
-
           </article>
           <div class="competitions__image">
             <picture>
@@ -226,13 +226,69 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer>
-      <div class="container"></div>
-    </footer>
+      <section class="staff">
+        <div class="staff__container container">
+          <h2>Тренеры</h2>
+          <div class="image-slider swiper">
+            <div class="image-slider__wrapper swiper-wrapper">
+              <div class="image-slider__slide swiper-slide">
+                <div class="staff-card">
+                  <div class="staff-card__front">
+                    <picture>
+                      <source type="image/webp" srcset="img/personal_anna.webp 1x, img/personal_anna2x.webp 2x">
+                      <img width="260" height="294" src="img/personal_anna.jpg" alt="Trainer Anna"
+                        srcset="img/personal_anna2x.jpg 2x">
+                    </picture>
+                    <h3>Анна Павлова</h3>
+                  </div>
+                  <div class="staff-card__back">
+                    <h3>Анна Павлова</h3>
+                    <span>CrossFit</span>
+                    <ul>
+                      <li>Certified Level 2 Trainer</li>
+                      <li>Победитель чемпионата Украины по CrossFit</li>
+                      <li>Опыт — 13 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="image-slider__slide swiper-slide">
+                <div class="staff-card">
+                  <div class="staff-card__front">
+                    <picture>
+                      <source type="image/webp" srcset="img/personal_alexey.webp 1x, img/personal_alexey2x.webp 2x">
+                      <img width="260" height="294" src="img/personal_alexey.jpg" alt="Trainer Alexey"
+                        srcset="img/personal_alexey2x.jpg 2x">
+                    </picture>
+                    <h3>Алексей Лавров</h3>
+                  </div>
+                  <div class="staff-card__back">
+                    <h3>Алексей Лавров</h3>
+                    <span>CrossFit</span>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по CrossFit</li>
+                      <li>Опыт — 1000 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+  </section>
+  </main>
+  <footer>
+    <div class="container"></div>
+  </footer>
   </div>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>
