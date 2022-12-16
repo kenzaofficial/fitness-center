@@ -12,9 +12,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
   new Swiper('.image-slider', {
     navigation: {
-      nextEl: 'swiper-button-next',
-      prevEl: 'swiper-button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
+    simulateTouch: true,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+    slidesPerView: 3,
   });
 
   // Modules
