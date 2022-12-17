@@ -1,7 +1,24 @@
-.image-slider {
-  padding: 320px 0 70px 0;
-  border: 2px solid red;
+.staff {
+  padding-top: 5px;
+  padding-bottom: 90px;
 }
+
+.staff__container {
+  h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: start;
+
+    @include vp-1023 {
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+.image-slider {}
 
 .swiper {}
 

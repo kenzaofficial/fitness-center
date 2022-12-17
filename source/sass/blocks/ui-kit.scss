@@ -115,7 +115,7 @@
 .product-card__price {
   position: relative;
   margin-top: 65px;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
@@ -175,6 +175,7 @@
 // --------------------staff-card-start--------------------
 .staff-card {
   position: relative;
+  margin: 0 auto;
   max-width: 260px;
 
 
@@ -196,16 +197,18 @@
 }
 
 .staff-card__front h3 {
+  width: 100%;
+  text-align: center;
   position: absolute;
   opacity: 1;
-  bottom: 0;
+  bottom: 5px;
   z-index: 1;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .staff-card__back {
-  padding-top: 58px;
+  padding: 50px 30px 40px;
   opacity: 0;
   background-color: rgba($color: #102654, $alpha: 0.9);
   position: absolute;
@@ -230,9 +233,16 @@
   }
 
   ul {
+    margin-top: 30px;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 21px;
 
+    li {
+      &:not(:last-child) {
+        margin-bottom: 13px;
+      }
+    }
   }
 }
 

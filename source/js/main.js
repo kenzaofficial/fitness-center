@@ -22,7 +22,16 @@ window.addEventListener('DOMContentLoaded', () => {
       onlyInViewport: true,
       pageUpDown: true,
     },
-    slidesPerView: 3,
+    slidesPerView: 1,
+    spaceBetween: 40,
+    breakpoints: {
+      767: {
+        slidesPerView: 2,
+      },
+      1023: {
+        slidesPerView: 4,
+      },
+    },
   });
 
   // Modules
