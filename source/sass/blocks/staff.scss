@@ -1,0 +1,41 @@
+.staff {
+  padding-top: 5px;
+  padding-bottom: 90px;
+}
+
+.staff__container {
+  h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: start;
+
+    @include vp-1023 {
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+.image-slider {}
+
+.swiper {}
+
+.image-slider__wrapper {}
+
+.swiper-wrapper {}
+
+.image-slider__slide {}
+
+.swiper-slide {}
+
+.staff-card {}
+
+.staff-card__front {}
+
+.staff-card__back {}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
