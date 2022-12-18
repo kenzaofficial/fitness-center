@@ -3,11 +3,22 @@
   color: $color-text-main;
   background-color: $secondary-bg;
 
+  @include vp-1023 {
+    padding: 85px 0 90px;
+  }
+
+  @include vp-767 {
+    padding: 60px 0 50px;
+  }
 
   h2 {
     text-align: center;
     margin: 0;
     margin-bottom: 55px;
+
+    @include vp-767 {
+      margin-bottom: 35px;
+    }
   }
 }
 
@@ -19,37 +30,87 @@
   margin: 0 auto;
   display: grid;
   max-width: 1040px;
-  grid-template-columns: 340px 240px 340px;
+  grid-template-columns: auto 240px auto;
   grid-template-rows: repeat(2, auto);
   column-gap: 60px;
   list-style-type: none;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 35px;
+  }
 }
 
-.advantages__item {}
+.advantages__item {
+  display: flex;
+}
 
 .advantages__item--main {
   grid-column: 2/3;
   grid-row: 1/-1;
 
+  @include vp-1023 {
+    margin: 30px auto 50px;
+    grid-column: 1/-1;
+    grid-row: 2/2;
+    max-width: 442px;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    max-width: none;
+    width: 100vw;
+    margin: 0;
+  }
 }
 
 .advantages-card {
   display: flex;
   column-gap: 30px;
-  background-color: teal;
-  outline: 1px solid white;
+  align-items: stretch;
+
+  @include vp-1023 {
+    column-gap: 20px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .advantages-card--main {
-  padding: 55px 30px;
+  padding: 57px 30px;
   text-align: center;
+  color: $color-default-white;
+  background-color: $advantages-bg-main;
+
+  @include vp-1023 {
+    padding: 30px 30px 40px;
+    justify-content: center;
+    width: 100%;
+
+    .advantages-card__number {
+      max-width: 200px;
+    }
+  }
 
   p {
-
     margin: 0;
     font-size: 26px;
     font-weight: 700;
     line-height: 1;
+
+    @include vp-1023 {
+      font-size: 22px;
+    }
   }
 
 
@@ -58,26 +119,45 @@
     font-size: 74px;
     font-weight: 700;
     line-height: 1;
+
+    @include vp-1023 {
+      margin-bottom: 10px;
+    }
   }
 
   span {
     display: inline-block;
     margin-top: 40px;
+
+    @include vp-1023 {
+      margin-top: 15px;
+    }
   }
 }
 
 
 .advantage-card__number {
-  transform: translateY(-7px);
+  transform: translateY(-10px);
+
+  @include vp-767 {
+    text-align: center;
+    transform: none;
+    margin-bottom: 10px;
+  }
 
   p {
     margin: 0;
+    margin-bottom: -5px;
     background: $advantages-gradient-1;
     background-clip: text;
     font-size: 71px;
     font-weight: 700;
     line-height: 1;
     color: transparent;
+
+    @include vp-1023 {
+      font-size: 58px;
+    }
   }
 
   span {
@@ -91,14 +171,54 @@
 
   h4 {
     margin: 0;
+    margin-bottom: 10px;
     font-size: 22px;
     font-weight: 700;
-    line-height: 33px;
+    line-height: 1;
+
+    @include vp-1023 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 5px;
+    }
   }
 
   p {
+    margin: 0;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
+  }
+}
+
+.advantages__item--square,
+.advantages__item--comfort {
+  padding-left: 20px;
+
+
+  @include vp-1023 {
+    padding: 0;
+  }
+}
+
+.advantages__item--comfort,
+.advantages__item--experience {
+  border-top: 2px solid rgba(209, 10, 66, 0.2);
+  order: 1;
+
+  @include vp-1023 {
+    border-top: none;
+  }
+
+  .advantages-card {
+    align-items: flex-end;
+
+    @include vp-767 {
+      align-items: center;
+
+    }
   }
 }
